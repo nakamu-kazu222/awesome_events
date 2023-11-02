@@ -26,5 +26,8 @@ module AwesomeEvents
     config.time_zone = "Tokyo"
     config.i18n.default_locale = :ja
     config.active_storage.variant_processor = :vips
+    config.generators do |g|
+      g.test_framework false
+    end
   end
 end
