@@ -72,4 +72,5 @@ gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 gem 'psych', '~> 3.1'
 
+gem 'rspec'
 gem 'rspec-rails'
