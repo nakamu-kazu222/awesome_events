@@ -22,8 +22,12 @@ Bundler.require(*Rails.groups)
 module AwesomeEvents
   class Application < Rails::Application
     config.load_defaults 6.0
+    config.active_support.to_time_preserves_timezone = true
     config.time_zone = "Tokyo"
     config.i18n.default_locale = :ja
     config.active_storage.variant_processor = :vips
+    config.generators do |g|
+      g.test_framework false
+    end
   end
 end

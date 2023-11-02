@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.6'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3'
+gem 'rails', '7.0.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -29,10 +29,10 @@ gem 'hamlit-rails', '~> 0.2.3'
 gem 'omniauth', '~> 1.9.1'
 gem 'omniauth-github', '~> 1.4.0'
 gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
-gem 'rails-i18n', '~> 6.0.0'
+gem 'rails-i18n', '~> 7.0.1'
 gem 'active_storage_validations', '~> 0.8.8'
 gem 'kaminari', '~> 1.2.0'
-gem 'searchkick', '~> 4.3.0'
+gem 'searchkick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,8 +45,8 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '~> 2.0.0'
 
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
@@ -66,3 +66,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'elasticsearch'
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
+gem 'psych', '~> 3.1'
+
+gem 'rspec'
+gem 'rspec-rails'
